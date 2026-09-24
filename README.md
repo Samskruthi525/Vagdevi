@@ -51,6 +51,8 @@ Zero grid power. Zero readings lost to network outages.**
 
 </div>
 
+<br/>
+
 <img src="diagrams/00_hero_concept.png" alt="Concept render of a field-deployed monitoring station" width="820"/>
 
 <sub><i>Concept render (AI-generated illustration) for communication only. It is not a photograph of built hardware and does not show a tested design.</i></sub>
