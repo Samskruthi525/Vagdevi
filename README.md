@@ -1,8 +1,8 @@
 <div align="center">
 
-# 💧 JALRAKSHAK
+# Vagdevi
 
-### जलरक्षक · A Smart Water Monitoring & Purification System for Remote Communities
+### वाग्वेदी · A Smart Water Monitoring & Purification System for Remote Communities
 
 **Solar- and wind-powered ESP32 nodes that keep watch over every water source in real time —
 measuring pH, turbidity, TDS, EC and temperature, verifying each reading at the edge, and
