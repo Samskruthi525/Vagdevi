@@ -43,11 +43,7 @@ Zero grid power. Zero readings lost to network outages.**
 
 <br/>
 
-**📡 Data** &nbsp; `Sensors` → `ESP32` → `SIM800L / Raspberry Pi` → `Firebase` → `Real-Time Dashboard`
 
-**💧 Water** &nbsp; `Raw Water` → `Mesh` → `Sedimentation` → `Activated Carbon` → `Quality Check` → `✅ Safe Release` / `🔁 Recirculate`
-
-<br/><br/>
 
 </div>
 
