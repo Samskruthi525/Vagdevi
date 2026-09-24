@@ -1,9 +1,55 @@
-
 <div align="center">
 
-# 💧 SMART WATER MONITORING & PURIFICATION SYSTEM
+# 💧 JALRAKSHAK
 
-### A rugged, traceable, offline-first, renewable-powered water-quality monitoring and diagnostic platform for remote, rural, mining-affected and infrastructure-limited regions
+### जलरक्षक · A Smart Water Monitoring & Purification System for Remote Communities
+
+**Solar- and wind-powered ESP32 nodes that keep watch over every water source in real time —
+measuring pH, turbidity, TDS, EC and temperature, verifying each reading at the edge, and
+recirculating unsafe water through mesh, sedimentation and activated carbon until it tests safe.
+Zero grid power. Zero readings lost to network outages.**
+
+[![Version](https://img.shields.io/badge/version-v1.0.0-023E8A?style=for-the-badge)](#overview)
+[![Status](https://img.shields.io/badge/status-Prototype-FF9F1C?style=for-the-badge)](#roadmap)
+[![Domain](https://img.shields.io/badge/domain-IoT%20%C2%B7%20Water%20Quality-0077B6?style=for-the-badge)](#system-architecture)
+<br/>
+[![Deployment](https://img.shields.io/badge/deployment-Remote%20%26%20Off--Grid-2A9D8F?style=for-the-badge)](#power-system)
+[![UN SDG 6](https://img.shields.io/badge/UN%20SDG%206-Clean%20Water%20%26%20Sanitation-26BDE2?style=for-the-badge)](https://sdgs.un.org/goals/goal6)
+[![License](https://img.shields.io/badge/license-MIT-6C757D?style=for-the-badge)](#license)
+
+<br/>
+
+![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white)
+![SIM800L](https://img.shields.io/badge/SIM800L-GSM%20%2F%20GPRS-5A189A?style=flat-square)
+![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-A22846?style=flat-square&logo=raspberrypi&logoColor=white)
+![Sensors](https://img.shields.io/badge/Sensors-pH%20%C2%B7%20Turbidity%20%C2%B7%20TDS%20%C2%B7%20EC%20%C2%B7%20Temp-0096C7?style=flat-square)
+<br/>
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+<br/>
+![Network](https://img.shields.io/badge/Network-Multi--Node%20Mesh-3A0CA3?style=flat-square)
+![Validation](https://img.shields.io/badge/Validation-Rule--Based%20%2B%20Anomaly%20Detection-7B2CBF?style=flat-square)
+![Offline Sync](https://img.shields.io/badge/Offline%20Sync-Local%20Queue%20%E2%86%92%20Auto%20Cloud%20Sync-0077B6?style=flat-square)
+<br/>
+![Power](https://img.shields.io/badge/Power-Solar%20%2B%20Wind%20%2B%20Battery-2A9D8F?style=flat-square)
+![Purification](https://img.shields.io/badge/Purification-Mesh%20%C2%B7%20Sedimentation%20%C2%B7%20Activated%20Carbon-00B4D8?style=flat-square)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)
+
+<br/>
+
+**📡 Data** &nbsp; `Sensors` → `ESP32` → `SIM800L / Raspberry Pi` → `Firebase` → `Real-Time Dashboard`
+
+**💧 Water** &nbsp; `Raw Water` → `Mesh` → `Sedimentation` → `Activated Carbon` → `Quality Check` → `✅ Safe Release` / `🔁 Recirculate`
+
+<br/><br/>
+
+</div>
 
 <img src="diagrams/00_hero_concept.png" alt="Concept render of a field-deployed monitoring station" width="820"/>
 
