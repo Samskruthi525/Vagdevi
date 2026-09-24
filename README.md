@@ -57,15 +57,13 @@ Zero grid power. Zero readings lost to network outages.**
 
 <sub><i>Concept render (AI-generated illustration) for communication only. It is not a photograph of built hardware and does not show a tested design.</i></sub>
 
+`RUGGED` · `TRACEABLE` · `OFFLINE-FIRST` · `TAMPER-RESISTANT` · `ENERGY-AWARE` · `RENEWABLE-POWERED` · `SIMPLE TO OPERATE` · `MODULAR` · `TESTABLE` · `SCALABLE`
+
 </div>
 
 <br/>
 
-<br/>
 
-`RUGGED` · `TRACEABLE` · `OFFLINE-FIRST` · `TAMPER-RESISTANT` · `ENERGY-AWARE` · `RENEWABLE-POWERED` · `SIMPLE TO OPERATE` · `MODULAR` · `TESTABLE` · `SCALABLE`
-
-<br/>
 
 | Project stage | Firmware | Edge | Cloud | Dashboard | Debugger | Power | Test suite |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
