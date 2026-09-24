@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/YOUR-ORG/smart-water-main/schema/raw-reading.v1.json",
+  "title": "Smart Water raw reading v1",
+  "type": "object",
+  "required": ["schema_version", "record_id", "node_id", "sensor_ids", "timestamp", "seq", "mode", "raw", "power", "comm"],
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": { "const": 1 },
+    "record_id": { "type": "string", "pattern": "^SWN-[0-9]{4}-[0-9]{5}-[0-9]{8}$" },
+    "node_id":   { "type": "string", "pattern": "^SWN-[0-9]{4}$" },
+    "boot_id":   { "type": "integer", "minimum": 0 },
+    "seq":       { "type": "integer", "minimum": 0 },
+    "sensor_ids": {
+      "type": "object",
+      "additionalProperties": { "type": "string", "pattern": "^[A-Z]{2}-[0-9]{2}$" }
+    },
+    "timestamp":   { "type": "string", "format": "date-time" },
+    "time_source": { "enum": ["RTC", "NTP", "GSM", "UNSYNCED"] },
+    "mode":        { "enum": ["NORMAL", "LOW_POWER", "EMERGENCY", "MAINTENANCE", "COMMISSIONING"] },
+    "raw": {
+      "type": "object",
+      "required": ["ph", "turbidity_ntu", "tds_ppm", "ec_us_cm", "temperature_c"],
+      "properties": {
+        "ph":            { "type": ["number", "null"] },
+        "turbidity_ntu": { "type": ["number", "null"] },
+        "tds_ppm":       { "type": ["number", "null"] },
+        "ec_us_cm":      { "type": ["number", "null"] },
+        "temperature_c": { "type": ["number", "null"] }
+      }
+    },
+    "raw_electrical": { "type": "object", "additionalProperties": { "type": ["number", "null"] } },
+    "cal_version":    { "type": "object", "additionalProperties": { "type": "string" } },
+    "power": {
+      "type": "object",
+      "properties": {
+        "battery_v": { "type": ["number", "null"] },
+        "battery_state": { "enum": ["CHARGING", "DISCHARGING", "IDLE", "FAULT", "UNKNOWN"] },
+        "source": { "enum": ["SOLAR", "WIND", "SOLAR+WIND", "RENEWABLE+BATTERY", "BATTERY"] },
+        "solar_w": { "type": ["number", "null"] },
+        "wind_w":  { "type": ["number", "null"] },
+        "load_w":  { "type": ["number", "null"] }
+      }
+    },
+    "comm": {
+      "type": "object",
+      "properties": {
+        "link":     { "enum": ["UART", "RS485", "WIFI", "CELLULAR"] },
+        "modem":    { "type": "string" },
+        "rssi_csq": { "type": ["integer", "null"] },
+        "retries":  { "type": "integer", "minimum": 0 }
+      }
+    },
+    "fw": { "type": "string" }
+  }
+}
